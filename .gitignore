@@ -106,7 +106,7 @@ venv.bak/
 static/
 media/
 migrations/
-
+profile-logo/
 
 # pycharm settings
 idea/
@@ -116,3 +116,4 @@ idea/
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+

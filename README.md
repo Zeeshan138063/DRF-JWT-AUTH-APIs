@@ -10,3 +10,6 @@ this project include Django RESTFul APIs for
 * 6: Send Email On password change
 * 7: Send Email in case of forget password
 * 8: APIs Documentation as well
+
+I have mentioned steps to done this task 
+https://1drv.ms/f/s!AsGceqFpiXY7eCBpQlu_wLuHgsc
