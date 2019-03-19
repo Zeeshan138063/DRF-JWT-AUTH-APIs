@@ -15,7 +15,7 @@ I have mentioned steps to done this small project.
 https://1drv.ms/f/s!AsGceqFpiXY7eCBpQlu_wLuHgsc
 
 
-* clone the project and create virtual environment suing 
+* clone the project and create virtual environment using 
 
 * virtualenv --python=python3 drf-jwt-auth-api-venv  
 
