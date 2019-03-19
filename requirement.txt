@@ -1,4 +1,5 @@
 astroid==2.2.5
+autoflake==1.2
 Django==2.1.7
 django-cors-headers==2.5.1
 djangorestframework==3.9.2
@@ -9,9 +10,14 @@ mccabe==0.6.1
 Pillow==5.4.1
 pkg-resources==0.0.0
 psycopg2==2.7.7
+pycodestyle==2.5.0
+pydocstyle==3.0.0
+pyflakes==2.1.1
 PyJWT==1.7.1
+pylama==7.6.6
 pylint==2.3.1
 pytz==2018.9
 six==1.12.0
+snowballstemmer==1.2.1
 typed-ast==1.3.1
 wrapt==1.11.1
