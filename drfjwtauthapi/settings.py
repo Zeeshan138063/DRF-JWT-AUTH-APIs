@@ -15,14 +15,11 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'gx*gt@@w^*0c1^w3(9#nbk1_gmba$$v5y0i90u(@rlzy%7f(9r'
-
-
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -69,7 +66,6 @@ MIDDLEWARE = [
 # set CORS_ORIGIN_ALLOW_ALL to True to allow all hosts
 
 CORS_ORIGIN_ALLOW_ALL = True
-
 
 # Look for the REST_FRAMEWORK inside the settings.py file
 REST_FRAMEWORK = {
@@ -142,8 +138,6 @@ JWT_AUTH = {
     'JWT_AUTH_COOKIE': None,
 }
 
-
-
 ROOT_URLCONF = 'drfjwtauthapi.urls'
 AUTH_USER_MODEL = 'user.User'
 
@@ -165,8 +159,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'drfjwtauthapi.wsgi.application'
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
@@ -185,7 +177,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -199,7 +190,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
@@ -209,3 +199,18 @@ STATIC_URL = '/static/'
 # MEDIA_URL = '/media/'
 # STATIC_ROOT = os.path.join(BASE_DIR,  "static")
 SITE_NAME = 'OneClout'
+
+# CELERY_BROKER_URL = 'amqp://localhost'
+
+# RABBIT RELATED SETTING
+
+RABBITMQ_HOST = 'localhost'
+CELERY_BROKER_URL = 'amqp://' + RABBITMQ_HOST
+
+# REDIS related settings
+
+# CELERY_TASK_SOFT_TIME_LIMIT = 60
+# REDIS_PORT = '6379'
+# BROKER_URL = 'redis://' + RABBITMQ_HOST + ':' + REDIS_PORT + '/0'
+# BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 43200}
+# CELERY_RESULT_BACKEND = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'

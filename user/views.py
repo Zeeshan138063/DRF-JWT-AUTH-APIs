@@ -179,3 +179,10 @@ class LogoutView(APIView):
 
         return Response({"detail": _("Successfully logged out.")},
                         status=status.HTTP_200_OK)
+
+from .tasks import create_random_user_accounts
+class A:
+    def test(self,total):
+
+        create_random_user_accounts.delay(total)
+

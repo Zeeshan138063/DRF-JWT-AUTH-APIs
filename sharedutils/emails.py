@@ -1,5 +1,7 @@
 """
 Module for sending emails
+make email async https://code.tutsplus.com/tutorials/using-celery-with-django-for-background-task-processing--cms-28732
+
 """
 
 from django.template.loader import get_template
@@ -7,6 +9,8 @@ from django.conf import settings
 
 from django.core.mail import EmailMessage
 from django.template import TemplateDoesNotExist
+
+from drfjwtauthapi.celery import app
 
 
 class Email():
@@ -31,6 +35,7 @@ class Email():
         }
         self.send_email(receiver, subject, template_name, key)
 
+    @app.task(name='emails.activate_clipped_asset')
     def password_change_email(self, user):
         """
         Accepts the following  parameters: user
@@ -45,6 +50,7 @@ class Email():
         }
         self.send_email(receiver, subject, template_name, key)
 
+    @app.task(name='emails.signup_email')
     def sign_up_email(self, user):
         """
         Accepts the following  parameters: user
@@ -75,3 +81,8 @@ class Email():
 
         except TemplateDoesNotExist as exception:
             print(exception)
+
+
+'''
+https://code.tutsplus.com/tutorials/using-celery-with-django-for-background-task-processing--cms-28732
+'''
