@@ -14,6 +14,8 @@ this project include Django RESTFul APIs for
 I have mentioned steps to done this small project. 
 https://1drv.ms/f/s!AsGceqFpiXY7eCBpQlu_wLuHgsc
 
+* For help you can view this link as well.
+https://medium.com/backticks-tildes/lets-build-an-api-with-django-rest-framework-32fcf40231e5
 
 * clone the project and create virtual environment using 
 
