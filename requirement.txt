@@ -1,6 +1,6 @@
 astroid==2.2.5
 autoflake==1.2
-Django==2.1.7
+Django==2.2.10
 django-cors-headers==2.5.1
 djangorestframework==3.9.2
 djangorestframework-jwt==1.11.0
