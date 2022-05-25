@@ -13,7 +13,7 @@ psycopg2==2.7.7
 pycodestyle==2.5.0
 pydocstyle==3.0.0
 pyflakes==2.1.1
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylama==7.6.6
 pylint==2.3.1
 pytz==2018.9
